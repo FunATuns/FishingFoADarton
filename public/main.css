@@ -70,7 +70,7 @@ b {
     text-transform: uppercase;
     color: white;
     padding: 7px 12px;
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: bold !important;
 }
 
@@ -153,11 +153,12 @@ b {
     display: block;
     text-align: center;
     padding: 5px 0;
+    font-weight: bold;
 }
 
 footer {
-    border-top: 1px solid #c7c7c7;
-    background-color: #dfdfdf;
+    border-top: 1px solid #dbdbdb;
+    background-color: #ececec;
     color: #777777;
     position: fixed;
     width: 100%;
