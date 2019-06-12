@@ -45,15 +45,15 @@ table {
 b {
     font-weight: bold;
     padding-bottom: 5px !important;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 #tpbr {
     background: rgb(139,0,68);
-    background: linear-gradient(90deg, rgba(139,0,68,1) 11%, rgba(193,58,0,1) 100%); 
+    background: linear-gradient(90deg, rgb(196, 0, 95) 11%, rgb(218, 65, 0) 100%); 
     display: block;
     width: 100%;
     color: white;
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 #tpbr p {
@@ -94,7 +94,7 @@ b {
     font-family: 'Cookie', cursive;
     font-size: 72px;
     padding: 10px 0;
-    padding-top: 40px;
+    padding-top: 35px;
     text-align: center;
 }
 
@@ -141,7 +141,7 @@ b {
     color: #777777;
     text-transform: uppercase;
     z-index: 3;
-    top: 348px;
+    top: 341px;
     background-color: white;
     letter-spacing: .5px;
     font-weight: bold;
@@ -177,5 +177,9 @@ footer i {
     display: block;
     position: relative;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 55px;
+}
+
+body * {
+    font-size: 90%;
 }
