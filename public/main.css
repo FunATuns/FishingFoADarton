@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b {
+    font-weight: bold;
+    padding-bottom: 5px !important;
+    font-size: 16px;
+}
+#tpbr {
+    background: rgb(139,0,68);
+    background: linear-gradient(90deg, rgba(139,0,68,1) 11%, rgba(193,58,0,1) 100%); 
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+}
+
+#tpbr p {
+    padding: 15px;
+}
+
+#tpbr button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 3px;
+    font-weight: bold !important;
+}
+
+#langtyp {
+    color: #00052e;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+#langtyp i {
+    font-size: 17px;
+    color: #999999;
+}
+
+#curlogo {
+    font-family: 'Cookie', cursive;
+    font-size: 72px;
+    padding: 10px 0;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#encourage {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    width: 85%;
+    color: #777777;
+    text-align: center;
+}
+
+#loginbtn {
+    background-color: #3897f0;
+    color: white;
+    width: 85%;
+    display: block;
+    position: relative;
+    margin: 15px auto;
+    padding: 8px 0;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: .25px;
+}
+
+#cvrbr {
+    width: 85%;
+    display: block;
+    position: relative;
+    margin: 25px auto;
+    height: 1px;
+    background-color: #c7c7c7;
+}
+
+#cvror {
+    width: 12%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #777777;
+    text-transform: uppercase;
+    z-index: 3;
+    top: 348px;
+    background-color: white;
+    letter-spacing: .5px;
+    font-weight: bold;
+}
+
+#signup {
+    color: #3897f0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer {
+    border-top: 1px solid #c7c7c7;
+    background-color: #dfdfdf;
+    color: #777777;
+    position: fixed;
+    width: 100%;
+    display: block;
+    bottom: 0;
+    text-align: center;
+    padding: 12px;
+}
+
+footer i {
+    color: black;
+    font-weight: bold;
+}
+
+#applelogothing {
+    width: 200px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+}
