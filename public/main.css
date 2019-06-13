@@ -190,6 +190,7 @@ footer i {
 }
 
 .inp {
+    -webkit-appearance: none;
     display: block;
     width: calc(85% - 14px);
     padding: 10px 7px;
