@@ -94,7 +94,7 @@ b {
     font-family: 'Cookie', cursive;
     font-size: 72px;
     padding: 10px 0;
-    padding-top: 35px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -199,6 +199,7 @@ footer i {
     border-radius: 3px;
     margin: 5px auto;
     color: #777777;
+    font-size: 18px
 }
 
 .inp::placeholder {
@@ -211,4 +212,5 @@ footer i {
     width: 100%;
     margin-top: 40px;
     display: block;
+    margin-bottom: 50px;
 }
