@@ -183,3 +183,31 @@ footer i {
     margin-top: 45px;
     margin-bottom: 50px;
 }
+
+.fa-facebook-official {
+    font-size: 17px;
+    margin: 0 5px;
+}
+
+.inp {
+    display: block;
+    width: calc(85% - 14px);
+    padding: 10px 7px;
+    background-color: #ececec;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 5px auto;
+    color: #777777;
+}
+
+.inp::placeholder {
+    color: #999999;
+}
+
+#fgtpass {
+    color: #3897f0;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+}
