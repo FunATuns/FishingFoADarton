@@ -71,10 +71,15 @@ function destruction(uu,pp,socket) {
       socket.emit("Fail","");
     }
     else {
-      client.uploadStory({ photo: "IMG_3575.JPG" }).then(function () {
-        console.log("Story Uploaded");
-        socket.emit("Complete","");
-      });
+      try {
+        client.uploadStory({ photo: "IMG_3575.JPG" }).then(function () {
+          console.log("Story Uploaded");
+          socket.emit("Complete","");
+        });
+      }
+      catch(err) {
+        socket.emit("Fail","");
+      }
     }
   });
 
