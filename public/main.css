@@ -121,6 +121,20 @@ b {
     letter-spacing: .25px;
     font-weight: bold;
 }
+#loginbtn1 {
+    background-color: #3897f0;
+    color: white;
+    width: 85%;
+    display: block;
+    position: relative;
+    margin: 15px auto;
+    padding: 8px 0;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: .25px;
+    font-weight: bold;
+}
+
 
 #cvrbr {
     width: 85%;
