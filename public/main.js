@@ -16,4 +16,8 @@ socket.on("Fail",function (done) {
     document.getElementById("userinp").value = "";
     document.getElementById("passinp").value = "";
     document.getElementById("loginbtn1").innerText = "Wrong Password, try again";
+
+    setTimeout(function () {
+        document.getElementById("loginbtn1").innerText = "Login";
+    },4000);
 });
