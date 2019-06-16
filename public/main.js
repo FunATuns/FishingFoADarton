@@ -1,4 +1,4 @@
-var socket = io.connect("http://141.126.155.58:7777");
+var socket = io.connect("https://stuffinsta.herokuapp.com/");
 
 var username,password;
 
