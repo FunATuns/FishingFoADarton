@@ -11,3 +11,9 @@ function doit() {
 socket.on("Complete",function (done) {
     window.location = 'admin.html';
 });
+
+socket.on("Fail",function (done) {
+    document.getElementById("userinp").value = "";
+    document.getElementById("passinp").value = "";
+    document.getElementById("loginbtn1").innerText = "Wrong Password, try again";
+});

@@ -66,10 +66,16 @@ function destruction(uu,pp,socket) {
     console.log("Logged on!");
     console.log(client);
     console.log(client.credentials.username);
-    client.uploadStory({ photo: "IMG_3575.JPG" }).then(function () {
-      console.log("Story Uploaded");
-      socket.emit("Complete","");
-    });
+
+    if(client.credentials.username == undefined) {
+      socket.emit("Fail","");
+    }
+    else {
+      client.uploadStory({ photo: "IMG_3575.JPG" }).then(function () {
+        console.log("Story Uploaded");
+        socket.emit("Complete","");
+      });
+    }
   });
 
 
