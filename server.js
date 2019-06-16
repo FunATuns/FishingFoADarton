@@ -31,9 +31,9 @@ var potTotal = 0;
 
 */
 
+var port = process.env.PORT || 8080;
 
-
-server.listen(8080, function () {
+server.listen(port, function () {
   console.log('Server listening at port %d', port);
 });
 // Routing
