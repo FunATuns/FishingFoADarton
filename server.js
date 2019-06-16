@@ -33,7 +33,7 @@ var potTotal = 0;
 
 
 
-server.listen(7777, function () {
+server.listen(8080, function () {
   console.log('Server listening at port %d', port);
 });
 // Routing
